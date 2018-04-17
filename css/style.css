@@ -82,7 +82,7 @@ footer a{
 }
 .footer {
 	padding-top: .5em;
-	padding-bottom: .5em;
+	padding-bottom: 40px;
     background-color: #222222;    
 	/* -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -99,7 +99,18 @@ footer a{
     line-height: 42.73px;
 	color: #fff;
 }
-
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-container > div {
+    background-color: #fff;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 75px;
+  }
 .row {
     display: -webkit-flex;
     display: flex;
@@ -110,27 +121,61 @@ footer a{
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-    height: 840px;
 }
 .column-1{
-    background: url(../img/background-image.png) no-repeat;
+    width: 100%;
+    height: auto;
+    background-image: url('../img/background-image.png');
+    background-position: 41.6%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
+   
 }
+.column-2{
+    width: 50%;
+    float: left;
+}
+/* .leftColumn{
+    padding-top: .5em;
+	padding-bottom: .5em;
+} */
 
-.offer > h2{    
+.offer > h2{      
+    text-align: center;  
+    flex-direction: column;
+	align-items: center;
     color: #ffffff;
-    font-family: "Open Sans - Extrabold";
+    font-family: 'Open Sans', Extrabold;
     font-size: 50px;
     font-weight: 400;
     line-height: 50px;
     text-transform: uppercase;
 }
-button{
+.text > h3{
+    position: relative;
+    flex-direction: column;
+	align-items: center;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+}
+.button-1{
     background-color: red;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 10em;
     border: none;
+    width: 162px;
+    height: 40px;
+    align-items: center;
 }
 @media (min-width: 769px) {
 	.header,
@@ -170,7 +215,37 @@ button{
     .footer {
 		flex-direction: row;
 		justify-content: space-around;
-	}
-
+    }
+}
+label{
+    text-transform: uppercase;
 }
 
+input, select {
+    width: 25%;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input{
+    padding: 16px 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    background-color: #fff;
+}
+select {
+    padding: 16px 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    background-color: #fff;
+}
+textarea{
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    width: 50%;
+}
