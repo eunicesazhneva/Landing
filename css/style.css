@@ -1,4 +1,4 @@
-*, *:before, *:after {
+*, *:before, *:after{
     box-sizing: border-box;
 }
 body{
@@ -6,45 +6,58 @@ body{
     margin: 0;
 }
 
-.main {
+.main{
     color: #000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px ;
-    align-items: center;
     height: 100vh;
-    min-height: 600px;     
-    position: relative; 
-}
-.logo {
-    height: auto;
-    width: 100%;
+    align-items: center;
+    min-height: 600px;
+    position: relative;
 }
 .header{
     display: flex;
-    height: 25vh;
+    height: 10vh;
     justify-content: space-between;
-    background-color: #fff;
     align-items: center;
     width: 100%;
     position: relative;
     z-index: 2;
-    color: #000;
 }
 .footer{
     display: flex;
-    height: 25vh;
+    height: 122px;
     justify-content: space-around;
-    background-color: #222222;
     align-items: center;
     width: 100%;
     position: relative;
     z-index: 2;
-    color: #fff;
+    background-color: #222222;
+}
+.menu{
+    width: 45%;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;    
+    font-weight: 400;
+    line-height: 33px;
+
 }
 .footer .menu-link{
     color: #ffffff;
+}
+.menu-link:hover{
+    border-bottom: 2px solid red;
 }
 .column-2 {   
     width: auto;
@@ -56,28 +69,16 @@ body{
     font-weight: 400;
     line-height: 33px;
     text-transform: uppercase;
-    border: 1px solid red;
 }
-.menu{
+.footer .column-2 {  
+    color: #fff; 
     width: auto;
-}
-.menu ul{
     display: flex;
     justify-content: space-between;
-    list-style: none;
-}
-.menu-link{
-    color: #000;
-    text-decoration: none;
-    margin: 2vh;
-    font-size: 12px;    
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 33px;
-    text-transform: uppercase;    
+    line-height: 24px;
+    text-transform: none;
 }
-
-.menu-link:hover{
-    border-bottom: 2px solid red;
-}
-
-
