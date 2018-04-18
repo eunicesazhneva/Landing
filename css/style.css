@@ -99,15 +99,18 @@ h1 {
     background-color: #fff;    
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	border-radius: 0px;
+    border-radius: 0px;
+    min-width: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 .Site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
-.footer {
-    
+.footer {   
     padding-top: .5em;
 	padding-bottom: .5em;
 	-webkit-border-radius: 0px;
@@ -529,7 +532,10 @@ textarea{
 		margin: 0 auto;
 		max-width: 1150px;
 	    }
-	}
+    }
+    .maxl{
+        width: 58%;
+    }
 
 }
 
@@ -544,18 +550,9 @@ textarea{
 		flex-direction: row;
 		justify-content: space-around;
     }
-}
-
-
-
-@media (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-    }
-    .footer {
-		flex-direction: row;
-		justify-content: space-around;
+    .maxl {
+        margin: 0px;
+        width: 44%;
     }
 }
 
@@ -568,6 +565,10 @@ textarea{
     }
     .contact-form {
 		width: 100%;
+    }
+    .maxl {
+        margin: 0px;
+        width: 47%;
     }
 
 }
