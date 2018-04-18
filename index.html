@@ -7,7 +7,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -17,30 +16,30 @@
 <body class="Site">
     <div>
         <header class="header">
-                <img src="./img/logo.png" alt="">
-                <h1 class="logo">
-                    <a href="#">Custom software development company</a>
-                </h1>
-                <ul class="main-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Case studies</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+            <img src="./img/logo.png" alt="">
+            <h1 class="logo">
+                <a href="#">Custom software development company</a>
+            </h1>
+            <ul class="main-nav">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Case studies</a>
+                </li>
+                <li>
+                    <a href="#">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </header>
 
         <div class="flexbox-container">
@@ -69,24 +68,28 @@
                     Get in touch with our team
                 </div>
 
-                <div class="contact-form">
-                    <div class="labels-form">
-                        <div class="labels-control">
-                            <label for="Email">Email</label>
+                <div class="contact-form">                    
+                        <div class="labels-form">
+                            <div class="labels-control">
+                                <label for="Email">Email</label>
+                            </div>
+                            <input type="email" name="Email" required id="email" onblur="addClass()">
+                            
                         </div>
-                        <input type="email" name="Email" id="" required>
-                    </div>
-                    <div class="labels-form">
-                        <div class="labels-control">
-                            <label for="budget">Budget</label>
+
+                        <div class="labels-form">
+                            <div class="labels-control">
+                                <label for="budget">Budget</label>
+                            </div>
+                            <select name="budget">
+                                <option value="low">$500-$1000</option>
+                                <option value="middle">$1000-$2000</option>
+                                <option value="high">$2000-$5000</option>
+                                <option value="idk">I don't know exactly</option>
+                            </select>                            
                         </div>
-                        <select name="budget">
-                            <option value="low">$500-$1000</option>
-                            <option value="middle">$1000-$2000</option>
-                            <option value="high">$2000-$5000</option>
-                            <option value="idk">I don't know exactly</option>
-                        </select>
-                    </div>
+                    
+                    <p class="" id = "invalid-email">Please fill email</p>
 
                     <div class="labels-textform">
                         <div class="textarea-div">
@@ -167,5 +170,6 @@
 
 
 </body>
+<script src="./js/script.js"></script>
 
 </html>
