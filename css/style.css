@@ -1,12 +1,12 @@
 
-* {
+* , html, body{
 	box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
-  width: 100%;
-  margin: 0;  
+    width: 100%;
+  margin: 0px;
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -34,6 +34,8 @@ a {
 
 footer a{
     color: #ffffff;
+    font-size: 12px;
+    text-transform: none;
 }
 
 .logo {
@@ -45,14 +47,19 @@ footer a{
 .logo-footer {
     color: #ffffff;
 	margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 33px;
 }
-
+img{
+    margin-left: 20px;
+}
 .main-nav {
 	margin-top: 5px;
 
+}
+h1 {
+    margin-left: 0px;
 }
 .logo a,
 .main-nav a {
@@ -95,9 +102,12 @@ footer a{
 
 .footer {
     
-    flex: 0 0 auto;
-	padding-top: .5em;
-    padding-bottom: 0px;
+    padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #ffffff; 
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
     background-color: #222222;    
 }
 .footer .main-nav a {
@@ -130,6 +140,22 @@ footer a{
     font-family: 'Open Sans';
     color: black;
     text-align: center;
+}
+.offer-form{
+    width:75%;
+    margin:0 auto;
+    padding-top: 40px;
+    padding-right: 5px;
+    position: relative;
+    font-family: 'Open Sans';
+    color: black;
+    text-align: center;
+    height:100%;
+}
+.offer{
+    padding-top: 15%;
+    width:100%;  
+    margin-left: 5px;
 }
 .labels-form{    
     width:45%;
@@ -172,14 +198,8 @@ footer a{
     text-align: center;
 }
 .button-1{
-    background-color: red;
-    text-transform: uppercase;
-    color: #fff;
-    margin-left: 10em;
-    border: none;
-    width: 162px;
-    height: 40px;
-    align-items: center;
+    margin-top: 15%;
+    width: 100%;
 }
 label{
     text-transform: uppercase;
@@ -205,7 +225,7 @@ input[type="checkbox"i] {
 
 .maxl{
     margin: 0px;
-    width: 45%;
+    width: 50%;
     
   }
   .inline{
@@ -380,10 +400,9 @@ textarea{
 
 .protected{
     display: inline-block;
-    width: 33%;
+    width: 30%;
     color: #21991f;
-    font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 30px;
     position: absolute;
