@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" /> -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
     <script src="./js/script.js"></script>
 
 </head>
@@ -44,8 +42,6 @@
 
     <div class="flexbox-container">
         <nav class="leftColumn">
-
-
             <div class="offer">
                 <h2>We offer</h2>
             </div>
@@ -58,114 +54,64 @@
                 </button>
             </div>
         </nav>
+
         <article class="main">
-            <div>
-                <img src="./img/waves.png" alt="">
-            </div>
-            <div class="right-text">
+            <div class="first-block">
+                <div>
+                    <img src="./img/waves.png" alt="">
+                </div>
                 Get in touch with our team
             </div>
+
             <div class="contact-form">
-                <form action="">
-                    <label for="Email">Email</label>
+                <div class="labels-form">
+                    <div class="labels-control">
+                        <label for="Email">Email</label>
+                    </div>
                     <input type="email" name="Email" id="" required>
-                    <label for="budget">Budget</label>
+                </div>
+                <div class="labels-form">
+                    <div class="labels-control">
+                        <label for="budget">Budget</label>
+                    </div>
                     <select name="budget">
                         <option value="low">$500-$1000</option>
                         <option value="middle">$1000-$2000</option>
                         <option value="high">$2000-$5000</option>
                         <option value="idk">I don't know exactly</option>
                     </select>
+                </div>
+
+                <div class="labels-textform">
+                        <div class="textarea-div">
+                                <div class="labels-control">
+                                    <label for="textarea">Message</label>
+                                </div>
+                                <textarea></textarea>
+                            </div>
+                </div>
+             
 
 
-                </form>
-
-                <div>
-                    <textarea>
-                                    
-                                        </textarea>
-                </div>
-                <div>
-                    <input type="checkbox"> I agree to the terms of use and privacy policy.
-                    <br>
-                    <input type="checkbox" checked> I want that you callback me as soon as possible.
-                </div>
-                <div>
-                    <span>
-                        Want to subscribe to our news?
-                        <input type="radio" name="group1" value="Yes" checked> Yes
-                        <input type="radio" name="group1" value="No"> No
-                </div>
-                <button>
-                    Send
-                </button>
             </div>
-        </article>
+
+            <div>
+                <input type="checkbox"> I agree to the terms of use and privacy policy.
+                <br>
+                <input type="checkbox" checked> I want that you callback me as soon as possible.
+            </div>
+            <div>
+                <span>
+                    Want to subscribe to our news?
+                    <input type="radio" name="group1" value="Yes" checked> Yes
+                    <input type="radio" name="group1" value="No"> No
+            </div>
+            <button>
+                Send
+            </button>
     </div>
-
-    <!-- <div class="flex-container">
-                <div class="column column-1">
-                    <div class="offer">
-                        <h2>We offer</h2>
-                    </div>
-                    <div class="text">
-                        <h3>quality software development outsourcing services at a reasonable price</h3>
-                    </div>
-                    <div>
-                        <button class="button-1">
-                            About us
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="column">
-                    <div class="rightColumn">
-                        <div>
-                            <img src="./img/waves.png" alt="">
-                        </div>
-                        <div class="right-text">
-                            Get in touch with our team
-                        </div>
-                        <div class="contact-form">
-                            <form action="">
-                                <label for="Email">Email</label>
-                                <input type="email" name="Email" id="" required>
-                                <label for="budget">Budget</label>
-                                <select name="budget">
-                                    <option value="low">$500-$1000</option>
-                                    <option value="middle">$1000-$2000</option>
-                                    <option value="high">$2000-$5000</option>
-                                    <option value="idk">I don't know exactly</option>
-                                </select>
-
-
-                            </form>
-
-                            <div>
-                                <textarea>
-                                    
-                                        </textarea>
-                            </div>
-                            <div>
-                                <input type="checkbox"> I agree to the terms of use and privacy policy.
-                                <br>
-                                <input type="checkbox" checked> I want that you callback me as soon as possible.
-                            </div>
-                            <div>
-                                <span>
-                                    Want to subscribe to our news?
-                                    <input type="radio" name="group1" value="Yes" checked> Yes
-                                    <input type="radio" name="group1" value="No"> No
-                            </div>
-                            <button>
-                                Send
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
-
+    </article>
+    </div>
     <!-- <footer class="footer">
                 <img src="./img/logo(1).png" alt="">
                 <h1 class="logo-footer">

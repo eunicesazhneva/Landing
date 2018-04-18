@@ -81,9 +81,6 @@ footer a{
     border-bottom: 1px solid red;
     color:#fff;
 }
-
-
-
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -109,72 +106,47 @@ footer a{
     line-height: 42.73px;
 	color: grey;
 }
-/* .flex-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .flex-container > div {
-    background-color: #fff;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    line-height: 75px;
-  }
-.row {
-    display: -webkit-flex;
-    display: flex;
-}
-.column {
-    border-top: 1px solid #000;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-} 
-
-.colummn {
-    float: left;
-    width: 50%;
-    height: auto;
-    border: 1px solid black;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}  .column-1{
-    width: 50%;
-    height: auto;
-    background-image: url('../img/background-image.png');
-    background-position: 41.6%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
-    -moz-background-size: 100%; 
-    -webkit-background-size: 100%; 
-    -o-background-size: 100%;
-    background-size: 100%;
-}
-.column-2{
-    width: 50%;
-    float: left;
-} */
-
-.right-text{
+.first-block{
+    width:200px;
+    /* padding: 5px; */
+    margin:0 auto;
     position: relative;
-    margin-left: 300px;
-    width: 300px;
-    font-family: 'Open Sans', Extrabold;
-    font-size: 30px;
+    font-family: 'Open Sans', 'Extrabold';
+    font-size: 24px;
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
     color: black;
     text-align: center;
 }
-
+.contact-form{
+    width:75%;
+    margin:0 auto;
+    padding-top: 20px;
+    padding-right: 5px;
+    position: relative;
+    font-family: 'Open Sans';
+    color: black;
+    text-align: center;
+}
+.labels-form{    
+    width:45%;
+    display: inline-block;    
+    margin-left: 5px;
+}
+.labels-textform{    
+    width:91%;
+    display: inline-block;    
+    margin-left: 5px;
+    padding-top: 20px;
+}
+.labels-control{
+    text-align: left;
+    font-size: 14px;
+}
+.textarea-div{
+    width: 100%;
+}
 .offer > h2{      
     text-align: center;  
     flex-direction: column;
@@ -209,44 +181,36 @@ footer a{
 }
 label{
     text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
+
 input, select {
-    width: 25%;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    border: 2px solid #f1f1f1;
+    background-color: #fff;    
 }
 input[type=text]:focus {
-    border: 3px solid #555;
+    border: 2px solid #555;
 }
-input{
-    padding: 16px 20px;
-    border: 1px solid #f1f1f1;
-    border-radius: 4px;
-    background-color: #fff;
-}
-select {
-    padding: 16px 20px;
-    border: 1px solid #f1f1f1;
-    border-radius: 4px;
-    background-color: #fff;
-}
+
 textarea{
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: #fff;
     resize: none;
-    width: 50%;
+    width: 100%;
 }
-
-
-
 .flexbox-container{
 	display: flex;
     width: 100%;
-
-  flex-wrap: wrap;
+    border-top: 1px solid black;
+    flex-wrap: wrap;
     
 }
 
@@ -257,23 +221,24 @@ textarea{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
-  flex-basis: auto;
-  padding: .5rem;
-  min-height: 666px;
+    background-size: cover;
+    flex-basis: auto;
+    padding: .5rem;
+    min-height: 666px;
 }
 
 .main{
 	order: 1;
 	flex: 5;
-	background-color: #CE9B64;
-  padding: .5rem;
+	background-color: #fff;
+    padding: .5rem;
 }
 
 .box1, .box2 {
   min-height: 100%;
 	padding: 1em;
 }
+
 
 /* mobile layout */
 @media (max-width: 480px){
