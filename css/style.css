@@ -5,6 +5,8 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0;  
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -196,6 +198,77 @@ input, select {
 input[type=text]:focus {
     border: 2px solid #555;
 }
+input[type="checkbox"i] {
+    margin: 0;
+    padding: 0;
+}
+
+.maxl{
+    margin: 0px;
+    width: 45%;
+    
+  }
+  .inline{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+  }
+  .inline + .inline{
+    margin-left:10px;
+  }
+  .radio{
+    color:#999;
+    font-size:15px;
+    position:relative;
+  }
+  .radio span{
+    position:relative;
+     padding-left:20px;
+  }
+  .radio span:after{
+    content:'';
+    width:15px;
+    height:15px;
+    border:3px solid;
+    position:absolute;
+    left:0;
+    top:1px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+  }
+  .radio input[type="radio"]{
+     cursor: pointer; 
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+  }
+  .radio input[type="radio"]:checked + span{
+    color:rgb(78, 80, 79);  
+  }
+  .radio input[type="radio"]:checked + span:before{
+      content:'';
+    width:5px;
+    height:5px;
+    position:absolute;
+    background:rgb(173, 0, 0);
+    left:5px;
+    top:6px;
+    border-radius:100%;
+    -ms-border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+  }
 
 textarea{
     height: 150px;
@@ -233,10 +306,135 @@ textarea{
 	background-color: #fff;
     padding: .5rem;
 }
+.checkbox-container{
+    width: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.radiobox-container{
+    width: 100%;    
+}
 
 .box1, .box2 {
   min-height: 100%;
 	padding: 1em;
+}
+.btn{
+    margin-top: 10px;
+    width: 20%;
+}
+.btn-2{
+    background-color: #dd3331;
+    width: 130px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 42.73px;
+    font-family: sans-serif;
+}
+.container-w3 {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: none;
+    text-align: left;
+    color: gray;
+    font-weight: 400;
+}
+.container-w3 .radio {
+    display: block;
+    position: relative;
+    padding-left: -10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: none;
+    text-align: left;
+    color: gray;
+    font-weight: 400;
+}
+.checkbox-main{
+    min-height:100px;
+    width: 91%;
+    display: inline-block;
+    margin-left: 5px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.protected{
+    display: inline-block;
+    width: 33%;
+    color: #21991f;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+.container-w3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-w3:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container-w3 input:checked ~ .checkmark {
+    background-color: #dd3331;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-w3 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-w3 .checkmark:after {
+    left: 7px;
+    top: 6px;
+    width: 4px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
