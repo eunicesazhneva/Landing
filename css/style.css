@@ -4,9 +4,9 @@
 }
 html,
 body {
-  height: 100%;
+    height: 100%;
     width: 100%;
-  margin: 0px;
+    margin: 0px;
 }
 
 body {
@@ -664,6 +664,14 @@ textarea{
 
 }
 
+@media (min-width: 1920px) {
+    
+    .maxl {
+        margin: 0px;
+        width: 38%;
+    }
+
+}
 @media (min-height: 790px){
     /* .fullPage{
         height: 100%;
