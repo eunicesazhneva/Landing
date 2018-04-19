@@ -113,9 +113,9 @@ h1 {
     flex-basis: auto;
 }
 .Site {
-    /*display: flex;*/
-    /*min-height: 100vh;*/
-    /*flex-direction: column;*/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
   }
 .footer {   
     padding-top: .5em;
@@ -152,7 +152,7 @@ h1 {
 }
 .contact-form{
     width:75%;
-    /*margin:0 auto;*/
+    margin:0 auto;
     padding-top: 20px;
     padding-right: 5px;
     position: relative;
@@ -343,21 +343,21 @@ textarea{
 }
 
 .leftColumn{
-	/*order: 1;*/
+	order: 1;
     flex: 1;
     background: url(../img/background-image.png) no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*flex-basis: auto;*/
+    flex-basis: auto;
     padding: .5rem;
     min-height: 666px;
 }
 
 .main{
-	/*order: 1;*/
-	flex: 1;
+	order: 1;
+	flex: 5;
 	background-color: #fff;
     padding: .5rem;
 }
@@ -667,7 +667,7 @@ textarea{
         width: 55%;
     }
     .contact-form {
-		/*width: 100%; */
+		width: 100%; 
     }
     .maxl {
         margin: 0px;
