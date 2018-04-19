@@ -481,7 +481,14 @@ textarea{
 .container-w3 input:checked ~ .checkmark:after {
     display: block;
 }
-
+textarea{
+    color: #808080;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
 .container-w3 .checkmark:after {
     left: 7px;
     top: 6px;
