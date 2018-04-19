@@ -511,7 +511,12 @@ textarea{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 100%;    
+}
+
+
+.invalid-input{
+    border: 1px solid #dd3331;
     
 }
 
