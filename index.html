@@ -10,11 +10,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
 </head>
 
 <body class="Site">
-    <div>
+    <div class="fullPage">
         <header class="header">
             <img src="./img/logo.png" alt="">
             <h1 class="logo">
@@ -48,9 +47,26 @@
                     <div class="offer">
                         <h2>We offer</h2>
                     </div>
-                    <div class="text">
-                        <h3>quality software development outsourcing services at a reasonable price</h3>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="text">Quality software development outsourcing services at a reasonable price</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="text">We can help you to improve your ideas in life</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="text">Send message to our managers</div>
+                        </div>
+                        <div class="dots">
+                            <ul>
+                                <li class="dot" onclick="currentSlide(1)"></li>
+                                <li class="dot" onclick="currentSlide(2)"></li>
+                                <li class="dot" onclick="currentSlide(3)"></li>
+                            </ul>
+                        </div>
                     </div>
+                    <br>
+
                     <div class="button-1">
                         <button class="btn-2">
                             About us
@@ -68,28 +84,29 @@
                     Get in touch with our team
                 </div>
 
-                <div class="contact-form">                    
-                        <div class="labels-form">
-                            <div class="labels-control">
-                                <label for="Email">Email</label>
-                            </div>
-                            <input type="email" name="Email" required id="email" onblur="addClass()">
-                            
+                <div class="contact-form">
+                    <div class="labels-form">
+                        <div class="labels-control">
+                            <label for="Email">Email</label>
                         </div>
+                        <input type="email" name="Email" required id="email" onblur="addClass()">
 
-                        <div class="labels-form">
-                            <div class="labels-control">
-                                <label for="budget">Budget</label>
-                            </div>
-                            <select name="budget">
-                                <option value="low">$500-$1000</option>
-                                <option value="middle">$1000-$2000</option>
-                                <option value="high">$2000-$5000</option>
-                                <option value="idk">I don't know exactly</option>
-                            </select>                            
+                    </div>
+
+                    <div class="labels-form">
+                        <div class="labels-control">
+                            <label for="budget">Budget</label>
                         </div>
-                    
-                    <p class="" id = "invalid-email">Please fill email</p>
+                        <select name="budget">
+                            <option value="low">$500-$1000</option>
+                            <option value="middle">$1000-$2000</option>
+                            <option value="high">$2000-$5000</option>
+                            <option value="idk">I don't know exactly</option>
+                        </select>
+                    </div>
+
+
+                    <p class="" id="invalid-email">Please fill email</p>
 
                     <div class="labels-textform">
                         <div class="textarea-div">

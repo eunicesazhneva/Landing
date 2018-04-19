@@ -15,6 +15,10 @@ body {
 	margin: 0;
     min-height: 100vh;
 }
+.fullPage{
+    width: 100%;
+    height: 100%;
+}
 
 ul {
   margin: 0;
@@ -22,6 +26,9 @@ ul {
   list-style: none;
 }
 
+li{
+    display: inline-block;
+}
 
 h2,
 h3,
@@ -222,12 +229,13 @@ label{
 .valid{  
     display: none;
 }
-#invalid-email{
+#invalid-email, #empty-email{
     display: none;
 }
 .invalid{
     color: #dd3331;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 400;
     text-align: left;
     padding-left: 5%;    
     display: block !important;
@@ -249,7 +257,7 @@ input[type="checkbox"i] {
 
 .maxl{
     margin: 0px;
-    width: 50%;
+    width: 55%;
     
   }
   .inline{
@@ -485,6 +493,72 @@ textarea{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.slideshow-container{
+    display: inline-flex;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    margin: auto;
+}
+.text{
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+.dot{
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+    margin: 10px 0;
+    background-color: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 0.5px solid white;
+    display: list-item;
+    
+}
+
+.mySlides{
+    width: 95%;
+}
+
+.active, .dot:hover{
+    background-color: #fff;
+}
+
+.dots{
+    display: inline-flex;
+    width: 5%;
+    height: 75%;
+    margin-top: 3%;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{ opacity: .4}
+    to{opacity:1}
+}
+@keyframes fade{
+    from{ opacity: .4}
+    to{opacity:1}
+}
+/* @Media queries */
 
 
 /* mobile layout */
@@ -500,9 +574,9 @@ textarea{
   
 		-webkit-box-orient: vertical;
 		-moz-box-orient: vertical;
-    -ms-flex-orient: vertical;
-    -webkit-orient: vertical;
-    orient: vertical;
+        -ms-flex-orient: vertical;
+        -webkit-orient: vertical;
+        orient: vertical;
 	}
 	.box2{
 		-webkit-box-ordinal-group: 2;
@@ -518,7 +592,11 @@ textarea{
 		order: 1;
 	}
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    .full-page{
+        width: 100%;
+        height: 100%;
+    }
 	.header,
 	.main-nav {
 		display: flex;
@@ -527,7 +605,7 @@ textarea{
 		flex-direction: column;
 		align-items: center;
     	.header{
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		max-width: 1150px;
 	}
@@ -540,7 +618,7 @@ textarea{
 		flex-direction: column;
 		align-items: center;
     	.footer{
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		max-width: 1150px;
 	    }
@@ -548,11 +626,7 @@ textarea{
     .maxl{
         width: 58%;
     }
-
 }
-
-
-
 @media (min-width: 1025px) {
 	.header {
 		flex-direction: row;
@@ -568,19 +642,33 @@ textarea{
     }
 }
 
-@media (min-width: 1440px) {
-	.leftColumn {
-        width: 40%;
+@media (min-width: 1439px) {
+	
+    .leftColumn {
+        width: 45%;
+    }
+    .flexbox-container{
+        width: 100%;
+        /* height: 100%; */
     }
     .main{
         width: 55%;
     }
     .contact-form {
-		width: 100%;
+		width: 100%; 
     }
     .maxl {
         margin: 0px;
-        width: 47%;
+        width: 51%;
     }
 
+}
+
+@media (min-height: 790px){
+    /* .fullPage{
+        height: 100%;
+    } */
+    .flexbox-container{
+        height:100%;
+    }
 }
